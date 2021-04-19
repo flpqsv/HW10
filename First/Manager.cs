@@ -12,6 +12,7 @@ namespace First
         {
             public void ShowManagerOptions()
             {
+                Console.WriteLine("wwwwww");
                 var userReply = "y";
 
                 while (userReply.ToLower() == "y")
