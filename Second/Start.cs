@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Channels;
 
 namespace Second
@@ -16,6 +17,7 @@ namespace Second
         {
             public static void Main(string[] args)
             {
+                Console.WriteLine("test");
                 AddDefaultCurrency();
             
                 var converter = new Converter();
