@@ -12,7 +12,8 @@ namespace First
         {
             public void ShowClientOptions()
             {
-                int wallet = 50;
+                Console.WriteLine("HOHOHO");
+                int wallet = 50;  
                 var userReply = "y";
 
                 while (userReply.ToLower() == "y")
