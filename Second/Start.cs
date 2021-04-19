@@ -17,7 +17,6 @@ namespace Second
         {
             public static void Main(string[] args)
             {
-                Console.WriteLine("test");
                 AddDefaultCurrency();
             
                 var converter = new Converter();
