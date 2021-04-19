@@ -12,6 +12,7 @@ namespace First
         {
             public void ShowClientOptions()
             {
+                Console.WriteLine("nise");
                 int wallet = 50;
                 var userReply = "y";
 
