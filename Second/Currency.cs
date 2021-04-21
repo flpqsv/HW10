@@ -30,9 +30,7 @@ namespace Second
 
             private static bool DoesCurrencyExist(string currency)
             {
-                var currencyConverter = new CurrencyConverter();
-
-                var result = CurrencyConverter.CurrencyRate.Keys.Any(key => key.Equals(currency.ToUpper()));
+                var result = CurrencyRate.Keys.Any(key => key.Equals(currency.ToUpper()));
 
                 if (!result)
                 {

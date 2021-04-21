@@ -11,7 +11,7 @@ namespace Third
     {
         static void Main(string[] args)
         {
-            int first, second;
+            float first, second;
             first = 10;
 
             second = first; 
