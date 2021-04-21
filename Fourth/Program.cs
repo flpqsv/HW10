@@ -4,7 +4,7 @@ namespace Fourth
 {
     public class References
     {
-        public int value;
+        public float value;
         public object reference;
     }
 
