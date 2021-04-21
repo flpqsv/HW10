@@ -4,7 +4,7 @@ namespace Third
 {
     public class Reference
     {
-        public int reference;
+        public float reference;
     }
     
     public class StartProgram
