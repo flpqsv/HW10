@@ -30,7 +30,7 @@ namespace Second
             {
                 CurrencyRate.Add("USD", 1);
                 CurrencyRate.Add("GBP", 0.71m);
-                CurrencyRate.Add("EUR", 0.84m);
+                CurrencyRate.Add("EUR", 0.9m);
                 CurrencyRate.Add("UAH", 27.85m);
                 CurrencyRate.Add("RUB", 76.34m);
             }
