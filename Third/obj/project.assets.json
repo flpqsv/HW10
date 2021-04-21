@@ -8,24 +8,31 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/Mabelle/.nuget/packages/": {}
+    "C:\\Users\\proho\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Mabelle/Desktop/HW10/Third/Third.csproj",
+      "projectUniqueName": "C:\\Users\\proho\\HWW\\Third\\Third.csproj",
       "projectName": "Third",
-      "projectPath": "/Users/Mabelle/Desktop/HW10/Third/Third.csproj",
-      "packagesPath": "/Users/Mabelle/.nuget/packages/",
-      "outputPath": "/Users/Mabelle/Desktop/HW10/Third/obj/",
+      "projectPath": "C:\\Users\\proho\\HWW\\Third\\Third.csproj",
+      "packagesPath": "C:\\Users\\proho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\proho\\HWW\\Third\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/Mabelle/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\proho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
