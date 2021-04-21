@@ -14,7 +14,6 @@ namespace First
             {
                 CreateCatalogue();
 
-                Console.WriteLine("Helllo!!!!!!!");
                 var customer = new Customer();
                 var manager = new Manager();
 

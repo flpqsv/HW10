@@ -12,7 +12,6 @@ namespace First
         {
             public void ShowClientOptions()
             {
-                Console.WriteLine("nise");
                 int wallet = 50;
                 var userReply = "y";
 
@@ -42,7 +41,7 @@ namespace First
                     Console.WriteLine("Please enter item's name: ");
                     var item = Console.ReadLine();
 
-                    if (int.TryParse(item, out int wrongitem))
+                    if (int.TryParse(item, out int wrongItem))
                     {
                         Console.WriteLine("There is no such item in the catalogue.");
                         break;

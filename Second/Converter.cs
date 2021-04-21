@@ -8,7 +8,7 @@ namespace Second
     {
         private class Converter
         {
-            public void ChooseCurrency()
+            public static void ChooseCurrency()
             {
                 while (true)
                 {
@@ -30,7 +30,7 @@ namespace Second
                         return;
                     }
 
-                    if (userCurrency.ToUpper() == secondCurrency.ToUpper())
+                    if (string.Equals(userCurrency, secondCurrency, StringComparison.CurrentCultureIgnoreCase))
                     {
                         Console.WriteLine("Please indicate different currencies.");
                         return;
@@ -39,28 +39,28 @@ namespace Second
                     Console.WriteLine("Thank you. Please indicate the sum you'd like to convert: ");
                     var sum = Console.ReadLine();
 
-                    if (!decimal.TryParse(sum, out decimal firstCurrency))
+                    if (!double.TryParse(sum, out double firstCurrency))
                     {
                         Console.WriteLine("Error: you can enter only numbers in this field.");
                         break;
                     }
-                    else if (decimal.Parse(sum) <= 0)
+                    else if (double.Parse(sum) <= 0)
                     {
                         Console.WriteLine($"Error: the sum cannot be under 0.");
                         break;
                     }
 
-                    decimal result = Convert(ref userCurrency, ref firstCurrency, ref secondCurrency);
+                    var result = Convert(ref userCurrency, ref firstCurrency, ref secondCurrency);
                     Console.WriteLine($"Your sum in {secondCurrency.ToUpper()} is {result}.");
                 }
             }
 
-            private decimal Convert(ref string userCurrency, ref decimal firstCurrency, ref string secondCurrency)
+            private static double Convert(ref string userCurrency, ref double firstCurrency, ref string secondCurrency)
             {
                 var currencyConverter = new CurrencyConverter();
 
-                decimal first = 0;
-                foreach (KeyValuePair<string, decimal> x in CurrencyRate)
+                double first = 0;
+                foreach (var x in CurrencyRate)
                 {
                     if (userCurrency.ToUpper() == x.Key)
                     {
@@ -68,16 +68,16 @@ namespace Second
                     }
                 }
 
-                decimal second = 0;
-                foreach (KeyValuePair<string, decimal> x in CurrencyRate)
+                double second = 0;
+                foreach (var (key, value) in CurrencyRate)
                 {
-                    if (secondCurrency.ToUpper() == x.Key)
+                    if (secondCurrency.ToUpper() == key)
                     {
-                        second = x.Value;
+                        second = value;
                     }
                 }
 
-                decimal result = firstCurrency / first * second;
+                var result = firstCurrency / first * second;
 
                 return result;
             }

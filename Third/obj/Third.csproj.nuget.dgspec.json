@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\QA_Den\\PROJECTS\\Practice7\\HW10\\Third\\Third.csproj": {}
+    "/Users/Mabelle/Desktop/HW10/Third/Third.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\QA_Den\\PROJECTS\\Practice7\\HW10\\Third\\Third.csproj": {
+    "/Users/Mabelle/Desktop/HW10/Third/Third.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\QA_Den\\PROJECTS\\Practice7\\HW10\\Third\\Third.csproj",
+        "projectUniqueName": "/Users/Mabelle/Desktop/HW10/Third/Third.csproj",
         "projectName": "Third",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\QA_Den\\PROJECTS\\Practice7\\HW10\\Third\\Third.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\QA_Den\\PROJECTS\\Practice7\\HW10\\Third\\obj\\",
+        "projectPath": "/Users/Mabelle/Desktop/HW10/Third/Third.csproj",
+        "packagesPath": "/Users/Mabelle/.nuget/packages/",
+        "outputPath": "/Users/Mabelle/Desktop/HW10/Third/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/Mabelle/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

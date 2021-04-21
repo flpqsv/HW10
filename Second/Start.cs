@@ -11,30 +11,19 @@ namespace Second
 
     internal partial class CurrencyConverter
     {
-        private static readonly Dictionary<string, decimal> CurrencyRate = new Dictionary<string, decimal>();
+        private static readonly Dictionary<string, double> CurrencyRate = new Dictionary<string, double>
+            {{"USD", 1}, {"GBP", 0.71},{"EUR", 0.84}, {"UAH", 27.85}, {"RUB", 76.34}};
 
         private class MainActions
         {
             public static void Main(string[] args)
-            {
-                Console.WriteLine("test");
-                AddDefaultCurrency();
-            
+            { 
                 var converter = new Converter();
 
                 while (true)
                 {
-                    converter.ChooseCurrency();
+                    Converter.ChooseCurrency();
                 }
-            }
-
-            private static void AddDefaultCurrency()
-            {
-                CurrencyRate.Add("USD", 1);
-                CurrencyRate.Add("GBP", 0.71m);
-                CurrencyRate.Add("EUR", 0.84m);
-                CurrencyRate.Add("UAH", 27.85m);
-                CurrencyRate.Add("RUB", 76.34m);
             }
         }
     }
