@@ -17,7 +17,7 @@ namespace First
 
                 while (userReply.ToLower() == "y")
                 {
-                    Console.WriteLine("Choose operation: buy item (1), show all items (2).");
+                    Console.WriteLine("Choose operation: Buy item (1), Show all items (2).");
                     var operation = Console.ReadLine();
 
                     switch (operation.ToLower())
