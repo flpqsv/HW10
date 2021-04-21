@@ -12,7 +12,7 @@ namespace Second
     internal partial class CurrencyConverter
     {
         private static readonly Dictionary<string, double> CurrencyRate = new Dictionary<string, double>
-            {{"USD", 1}, {"GBP", 0.71},{"EUR", 0.84}, {"UAH", 27.85}, {"RUB", 76.34}};
+            {{"USD", 1}, {"GBP", 0.71},{"EUR", 0.9}, {"UAH", 27.85}, {"RUB", 76.34}};
 
         private class MainActions
         {
