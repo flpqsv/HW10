@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading.Channels;
 
@@ -17,7 +17,7 @@ namespace Second
         private class MainActions
         {
             public static void Main(string[] args)
-            { 
+            {
                 var converter = new Converter();
 
                 while (true)
